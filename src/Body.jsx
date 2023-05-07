@@ -14,7 +14,7 @@ const api_key = '6456780c7213f63d4325ec49';
         }
     })
 
-    console.log(posts);
+    console.log(posts.data);
     // setUser(posts.data);
   };
   useEffect(() => {
