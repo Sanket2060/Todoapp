@@ -75,7 +75,7 @@ button:focus-visible {
   box-sizing: border-box;
   background-color: aqua;
    width: 400px;
-   height: 500px;
+   height: fit-content;
    padding: 0px 20px;
 }
 
@@ -107,4 +107,41 @@ button:focus-visible {
 }
 .taskid{
   margin-left: 5px;
+}
+
+
+/* Addtask.jsx */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+label {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+input[type="text"], input[type="checkbox"] {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.myownbutton {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
 }
