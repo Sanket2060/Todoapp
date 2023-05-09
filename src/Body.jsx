@@ -1,16 +1,11 @@
-import axios from "axios";
-import { useEffect } from "react";
-import { useState } from 'react';
 
 
-const Body = ({ titled, taskid, isDone }) => {
-    const [completedgreen, Setcompletedgreen] = useState("green")
-    if (!isDone) {
-        Setcompletedgreen("green");
-    }
+
+const Body = ({ titled, taskid }) => {
+    
 return (
     <>
-        <div className="task" style={{ backgroundColor: "{ completedgreen }" }}>{titled}
+        <div className="task" >{titled}
             <div className="taskid">TI{taskid}</div>
             <button className="checkbox bggreen poscompleted " >C</button>
             <button className="checkbox posdelete">D</button>
