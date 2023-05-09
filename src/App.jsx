@@ -30,7 +30,7 @@ function App() {
     {
 
       tasks.map((element,index)=>{
-        return <Body titled={element.title} taskid={index+1} />
+        return <Body titled={element.title} taskid={element._id} />
 
       })
     }
