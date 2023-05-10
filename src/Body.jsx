@@ -6,14 +6,16 @@ const [taskcolor,setTaskColor]=useState("burlywood")
 const colorGreen=()=>{
     setTaskColor("#2FBF71");
  }
-const deleteTask=()=>{
+const deleteTask=async ()=>{
+    console.log(taskid);
    console.log("Delete task")
     // DELETE request
-axios.delete('https://react-workshop-todo.fly.dev/todos/'+{taskid}, {
+await axios.delete('https://react-workshop-todo.fly.dev/todos/'+{taskid}, {
 	headers: {
 		apiKey:'6456780c7213f63d4325ec49'
 	}
-})
+}) 
+console.log("taskdeleted");
 }
 return (
     <>
